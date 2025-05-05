@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sousou no Frieren</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav" aria-label="Menu principal">
+            <ul class="nav-list">
+                <li>
+                    <a id="home" href="#inicio"><strong>Home</strong></a>
+                </li>
+                <li>
+                    <a href="#historia">História</a>
+                </li>
+                <li>
+                    <a href="#personagens">Personagens</a>
+                </li>
+                <li>
+                    <a href="#temas">Temas</a>
+                </li>
+                <li>
+                    <a href="#universo">Universo</a>
+                </li>
+                <li class="dropdown">
+                    <span>Soundtrack</span>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <span class="titulo-musica">The End of One Journey</span>
+                            <button onclick="tocarMusica('static/audio/musica1.mp3')">▶</button>
+                        </li>
+                        <li>
+                            <span class="titulo-musica">A Well-Earned Celebration</span>
+                            <button onclick="tocarMusica('static/audio/musica2.mp3')">▶</button>
+                        </li>
+                        <li>
+                            <span class="titulo-musica">For 1000 Years</span>
+                            <button onclick="tocarMusica('static/audio/musica3.mp3')">▶</button>
+                        </li>
+                        <li>
+                            <span class="titulo-musica">One Last Adventure</span>
+                            <button onclick="tocarMusica('static/audio/musica4.mp3')">▶</button>
+                        </li>
+                        <li>
+                            <span class="titulo-musica">Departures</span>
+                            <button onclick="tocarMusica('static/audio/musica5.mp3')">▶</button>
+                        </li>
+                        <li>
+                            <span class="titulo-musica">Time Flows Ever Onward</span>
+                            <button onclick="tocarMusica('static/audio/musica6.mp3')">▶</button>
+                        </li>
+                        <li>
+                            <span class="titulo-musica">Grassy Turtles and Seed Rats</span>
+                            <button onclick="tocarMusica('static/audio/musica7.mp3')">▶</button>
+                        </li>
+                        <li>
+                            <span class="titulo-musica">Where the Blue-Moon Weed Grows</span>
+                            <button onclick="tocarMusica('static/audio/musica8.mp3')">▶</button>
+                        </li>
+                        <li>
+                            <span class="titulo-musica">Fear Brought Me This Far</span>
+                            <button onclick="tocarMusica('static/audio/musica9.mp3')">▶</button>
+                        </li>
+                        <li>
+                            <span class="titulo-musica">Zoltraak</span>
+                            <button onclick="tocarMusica('static/audio/musica10.mp3')">▶</button>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/playlist?list=OLAK5uy_lpuQ9v1KQMhRhSslD9SkWoi1rimC_mtTM"
+                                target="_blank" rel="external">Todas</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#galeria">Galeria</a>
+                </li>
+                <li class="dropdown">
+                    <span>Créditos</span>
+                    <ul class="dropdown-menu creditos-menu">
+                        <li class="foto-autor">
+                            <img src="static/images/minha-foto.jpeg" alt="Minha Foto">
+                        </li>
+                        <li style="justify-content: center;">
+                            <a href="https://www.instagram.com/pedromgtt/" target="_blank">Instagram</a>
+                        </li>
+                        <li style="justify-content: center;">
+                            <a href="https://www.linkedin.com/in/pedroaugustomignotti/" target="_blank">LinkedIn</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <div id="spoiler-popup" class="spoiler-popup">
+        <div class="spoiler-content">
+            <h3>Aviso de Spoiler</h3>
+            <p>O website a seguir contém todo tipo de spoiler sobre Sou Sou no Frieren!</p>
+            <button onclick="closeSpoiler()">Entendi!</button>
+        </div>
+    </div>
+
+    <main>
+        <section class="capa" id="inicio">
+            <h1>Sou Sou no Frieren</h1>
+        </section>
+        <section class="historia" id="historia">
+            <h2>História</h2>
+            <article>
+                <p>Após uma jornada de dez anos enfrentando monstros, dificuldades e o Rei Demônio, o grupo de heróis
+                    composto por Himmel, o herói; Frieren, a maga elfa; Heiter, o sacerdote; e Eisen, o guerreiro anão,
+                    conclui sua missão e retorna triunfante à capital do reino. São recebidos com grandes celebrações e
+                    tratados como lendas vivas por terem salvo o mundo. Após esse evento, cada um segue seu caminho.
+                    Como uma elfa com milhares de anos de vida, Frieren trata o fim da jornada com naturalidade, como um
+                    episódio breve em sua existência. Ela promete retornar em cinquenta anos para assistir com seus
+                    amigos a uma chuva de meteoros rara, algo que já tinham feito juntos no passado.</p>
+                <br><br>
+                <p>Cinquenta anos se passam. Frieren volta à capital para cumprir sua promessa. Quando reencontra seus
+                    antigos companheiros, eles já estão envelhecidos. Himmel, agora um idoso, se emociona ao revê-la.
+                    Pouco depois, ele morre, e Frieren presencia seu funeral. A morte de Himmel provoca em Frieren um
+                    sentimento novo: o pesar por não ter conhecido de verdade aqueles com quem compartilhou uma década
+                    de sua existência. Esse arrependimento a impulsiona a embarcar em uma nova jornada pelo mundo.</p>
+                <br><br>
+                <p>Ela visita novamente Heiter, que está próximo do fim de sua vida, e aceita cuidar de uma jovem
+                    aprendiz humana chamada Fern, que Heiter havia criado e queria que aprendesse magia. Frieren começa
+                    a viajar com Fern, ensinando-lhe magia, e ambas seguem por diversas regiões, enfrentando monstros,
+                    ajudando vilarejos, coletando grimórios mágicos e relembrando momentos da jornada original.</p>
+                <br><br>
+                <p>Em uma dessas paradas, elas reencontram Eisen, que agora vive isolado nas montanhas. A pedido dele,
+                    Frieren e Fern vão atrás de seu discípulo, Stark, um jovem espadachim promissor, mas covarde e
+                    inseguro. Após enfrentarem juntos um dragão que ameaçava um vilarejo, Stark decide se juntar à
+                    dupla. A partir de então, o trio continua sua peregrinação, lidando com ameaças demoníacas,
+                    protegendo humanos e aprimorando suas habilidades.</p>
+                <br><br>
+                <p>O grande objetivo da nova jornada de Frieren é alcançar o extremo norte do continente, até a terra
+                    sagrada de Aureole. Esse local, segundo lendas e registros mágicos antigos, permitiria o contato com
+                    os mortos. Frieren deseja chegar até lá para reencontrar Himmel e se despedir adequadamente dele —
+                    algo que não foi capaz de fazer em vida. Para isso, ela e seus companheiros devem atravessar zonas
+                    perigosas, incluindo regiões ainda influenciadas por demônios, ruínas antigas, cidades mágicas e
+                    áreas seladas por magia poderosa.</p>
+                <br><br>
+                <p>Durante a jornada, eles participam de exames para obter uma certificação mágica avançada, necessária
+                    para que Frieren acesse feitiços de alto nível que podem ajudá-la a chegar até Aureole. O exame
+                    coloca Frieren, Fern e Stark diante de outros magos poderosos e diversas provas, inclusive combates
+                    e dilemas estratégicos. Fern demonstra grande talento, sendo reconhecida como uma das mais
+                    promissoras magas humanas da nova geração. Frieren, embora muito mais experiente, evita chamar
+                    atenção, mas quando necessário, revela seu imenso poder acumulado ao longo dos séculos.</p>
+                <br><br>
+                <p>Após o exame, o grupo continua sua jornada rumo ao norte, atravessando áreas hostis como o Reino da
+                    Geleira Eterna e o Castelo do Norte, que ainda abriga demônios remanescentes da guerra. Durante essa
+                    etapa, enfrentam batalhas intensas com magos demoníacos, armadilhas arcanas e desafios climáticos
+                    extremos. Mesmo assim, continuam avançando com perseverança.</p>
+                <br><br>
+                <p>Ao longo do caminho, encontram vestígios de Himmel, Heiter e Eisen: estátuas erguidas em suas
+                    homenagens, lugares por onde passaram e pessoas que ajudaram. Essas lembranças reforçam a motivação
+                    de Frieren de seguir até o fim.</p>
+                <br><br>
+                <p>Conforme se aproximam de Aureole, os desafios se intensificam. Uma das últimas ameaças é uma poderosa
+                    maga demoníaca chamada Solitär, que manipula humanos e demônios em seu próprio benefício. Frieren e
+                    seus aliados conseguem detê-la com esforço conjunto e grande risco. Já exaustos, eles alcançam a
+                    última parte do caminho: as ruínas que guardam a entrada para o local sagrado.</p>
+                <br><br>
+                <p>A história continua com o grupo às portas de Aureole, ainda enfrentando os perigos finais, enquanto
+                    Frieren se aproxima da realização de seu objetivo: se despedir do homem que mudou sua perspectiva
+                    sobre o tempo e sobre os humanos — Himmel. O momento do reencontro ainda não chegou, mas a jornada
+                    até lá molda a nova vida de Frieren e dos que a acompanham.</p>
+                <br><br>
+            </article>
+        </section>
+        <section id="personagens">
+            <h2>Personagens</h2>
+            <br><br><br>
+            <article class="characters">
+                <img src="static/images/char-frieren.jpg" alt="imagem-da-frieren" class="img-characters">
+                <p class="text-characters">Frieren é uma elfa que vive há mais de mil anos e
+                    aparenta ser fria e distante. Depois de derrotar o Rei Demônio ao lado de companheiros humanos, ela
+                    segue vivendo enquanto eles envelhecem e morrem. Só então percebe o quanto deixou de valorizar
+                    aquele tempo juntos. Movida pelo arrependimento, parte em uma nova jornada para entender melhor os
+                    sentimentos humanos e aprender a se conectar de verdade com as pessoas. Mesmo sendo alguém que vive
+                    há séculos, Frieren está apenas começando a entender o que é viver.</p>
+            </article>
+            <br><br><br><br><br><br><br><br><br><br>
+            <article class="characters">
+                <img src="static/images/char-fern.jpg" alt="imagem-da-fern" id="img-fern" class="img-characters">
+                <p class="text-characters">Fern é uma jovem séria, madura além da idade, e com um jeito tranquilo que
+                    esconde uma sensibilidade profunda. Criada em meio à perda e à solidão, ela aprendeu desde cedo a
+                    ser forte e a cuidar dos outros, mesmo quando precisava de cuidado também. Ao lado de Frieren,
+                    desenvolve uma relação que vai além de mestre e aprendiz — é quase como mãe e filha, ou até irmãs.
+                    Fern observa o mundo com olhos atentos, valoriza os pequenos gestos e carrega uma melancolia suave,
+                    típica de quem amadureceu rápido demais. Ainda assim, há uma ternura nela, especialmente quando
+                    começa a se permitir viver, rir e se conectar de verdade com quem está ao seu redor.</p>
+            </article>
+            <br><br><br><br><br><br><br><br><br><br>
+            <article class="characters">
+                <img src="static/images/char-stark.jpg" alt="imagem-do-stark" id="img-stark" class="img-characters">
+                <p class="text-characters">Stark é um jovem guerreiro que, à primeira vista, parece covarde e inseguro,
+                    mas por trás disso carrega um coração enorme e uma coragem que cresce com o tempo. Ele não se vê
+                    como alguém especial, mas está sempre disposto a proteger quem ama, mesmo que isso o apavore. Com um
+                    jeito desajeitado e sincero, Stark traz leveza e humanidade ao grupo, sendo aquele tipo de pessoa
+                    que erra, aprende e continua tentando. Sua força não está só nos músculos, mas principalmente na
+                    vontade de superar seus medos e estar presente para os outros, mesmo quando acha que não é
+                    suficiente.</p>
+            </article>
+            <br><br><br><br><br><br><br><br><br><br>
+            <article class="characters">
+                <img src="static/images/char-himmel.png" alt="imagem-do-himmel" id="img-himmel" class="img-characters">
+                <p class="text-characters">Himmel foi o herói do grupo que derrotou o Rei Demônio ao lado de Frieren.
+                    Diferente dela, era humano, carismático e caloroso, sempre preocupado com os outros. Tinha um jeito
+                    leve e brincalhão, mas por trás disso havia alguém profundamente gentil e corajoso. Mesmo sem
+                    poderes grandiosos, foi ele quem uniu o grupo e deu sentido à jornada. Após sua morte, Frieren
+                    percebe o quanto ele foi importante e o quanto deixou de conhecê-lo de verdade. Himmel vive pouco,
+                    mas deixa uma marca eterna em quem esteve ao seu lado.</p>
+            </article>
+            <br><br><br><br><br><br><br><br><br><br>
+            <article class="characters">
+                <img src="static/images/char-heiter.png" alt="imagem-do-heiter" id="img-heiter" class="img-characters">
+                <p class="text-characters">Heiter é um sacerdote tranquilo e irônico, membro do antigo grupo de heróis
+                    que derrotou o Rei Demônio ao lado de Frieren. Sempre com uma expressão despreocupada e um
+                    comentário sarcástico na ponta da língua, ele escondia sua sensibilidade por trás de brincadeiras.
+                    Apesar de parecer relaxado, Heiter era profundamente sábio e compassivo. Mesmo ciente de sua
+                    fragilidade humana, adotou a jovem Fern para que ela tivesse um futuro digno. Sua morte marca
+                    Frieren, que só depois passa a entender o valor dos gestos simples que ele deixou para trás.</p>
+            </article>
+            <br><br><br><br><br><br><br><br><br><br>
+            <article class="characters">
+                <img src="static/images/char-eisen.png" alt="imagem-do-eisen" id="img-eisen" class="img-characters">
+                <p class="text-characters">Eisen é um anão que serviu como guerreiro no lendário Grupo dos Heróis, sendo
+                    conhecido por seu comportamento espirituoso e sua lealdade inabalável aos companheiros. Apesar de
+                    sua aparência robusta e rústica, ele possui um coração gentil e valoriza silenciosamente a amizade,
+                    demonstrando sabedoria e gentileza nas interações cotidianas. Reservado e pragmático, também
+                    aprendeu a cultivar pequenas tradições de carinho, como orar em memória de seus entes queridos,
+                    reflexo de sua profunda humanidade que contrasta com sua imagem dura.</p>
+            </article>
+
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="temas">
+            <h2>Espelho das Reflexões</h2>
+            <br><br>
+            <div class="container">
+                <!-- SVG com fragmentos -->
+                <svg viewBox="0 0 500 500" class="espelho">
+                    <defs>
+                        <pattern id="img-tempo" patternUnits="userSpaceOnUse" width="1920" height="1080">
+                            <image href="static/images/tempo.png" x="1300" y="-250" width="1920" height="1080" />
+                        </pattern>
+                        <pattern id="img-luto" patternUnits="userSpaceOnUse" width="1920" height="500">
+                            <image href="static/images/luto.png" x="-470" y="-250" width="1920" height="1080" />
+                        </pattern>
+                        <pattern id="img-lacos" patternUnits="userSpaceOnUse" width="1920" height="1080">
+                            <image href="static/images/lacos.png" x="-450" y="-300" width="1920" height="1080" />
+                        </pattern>
+                        <pattern id="img-memoria" patternUnits="userSpaceOnUse" width="1920" height="1080">
+                            <image href="static/images/memoria.png" x="-300" y="-670" width="1920" height="1080" />
+                        </pattern>
+                        <pattern id="img-mudanca" patternUnits="userSpaceOnUse" width="1920" height="1080">
+                            <image href="static/images/mudanca.png" x="650" y="-250" width="1920" height="1080" />
+                        </pattern>
+                    </defs>
+                    <path class="fragmento" id="tema-tempo" fill="url(#img-tempo)" d="M-300,70 L-40,60 L10,180 Z">
+                    </path>
+                    <path class="fragmento" id="tema-memoria" fill="url(#img-memoria)" d="M700,70 L500,400 L400,200 Z">
+                    </path>
+                    <path class="fragmento" id="tema-lacos" fill="url(#img-lacos)" d="M0,400 L350,400 L200,250 Z">
+                    </path>
+                    <path class="fragmento" id="tema-mudanca" fill="url(#img-mudanca)"
+                        d="M-550,350 L-200,450 L-100,250 Z"></path>
+                    <path class="fragmento" id="tema-luto" fill="url(#img-luto)" d="M1000,100 L900,500 L700,300 Z">
+                    </path>
+                </svg>
+                <br>
+            </div>
+
+            <div id="modal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="fechar">&times;</span>
+                    <div id="texto-modal"></div>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="universo">
+            <h2>Universo</h2>
+            <br><br><br><br><br>
+            <section class="linha-tempo">
+                <section class="carrossel-container">
+                    <button class="nav-carrossel prev">‹</button>
+                    <div class="carrossel" id="carrossel">
+                        <div class="card ativo" style="background-image: url('static/images/serie-carrossel.png')">
+                            <div class="texto">
+                                <h2>Era mítica</h2>
+                                <p>Serie se torna uma grande maga, e o rei demonio ascende ao poder.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="background-image: url('static/images/kingtomb-carrossel.png');">
+                            <div class="texto">
+                                <h2>Era da dinastia unificada</h2>
+                                <p>A tumba do rei é construída e cai em ruínas para se tornar uma dungeon.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="background-image: url('static/images/flame-carrossel.jpg');">
+                            <div class="texto">
+                                <h2>Era da grande maga Flamme</h2>
+                                <p>Magia deixa de ser considerada tecnicas demoniacas e Flamme adota Frieren como
+                                    aprendiz.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="background-image: url('static/images/party-carrossel.jpeg');">
+                            <div class="texto">
+                                <h2>Era dos humanos</h2>
+                                <p>Frieren e seu grupo passam por diversas aventuras e derrotam o rei demonio.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="background-image: url('static/images/paz-carrossel.jpeg');">
+                            <div class="texto">
+                                <h2>Era de paz</h2>
+                                <p>É aonde o anime acontece!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="nav-carrossel next">›</button>
+                </section>
+            </section>
+            <br><br>
+            <article class="links-externos">
+                <p>Para uma timeline completa clique
+                    <a href="https://frieren.fandom.com/wiki/Timeline" target="_blank" rel="external">
+                        aqui
+                    </a>
+                </p>
+            </article>
+
+            <br>
+
+            <article class="links-externos">
+                <p>Veja também o mapa completo e detalhado
+                    <a href="https://frieren-anime.jp/special/map/" target="_blank" rel="external">
+                        aqui
+                    </a>
+                </p>
+            </article>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <section class="galeria">
+                <div class="grid-galeria">
+                    <div class="item-galeria">
+                        <div class="selo-4k">1080p+</div>
+                        <img src="static/images/imagem1.jpeg" alt="Imagem 1">
+                        <a href="static/images/imagem1.jpeg" download class="botao-download">⬇ Baixar</a>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="selo-4k">1080p+</div>
+                        <img src="static/images/imagem2.jpeg" alt="Imagem 2">
+                        <a href="static/images/imagem2.jpeg" download class="botao-download">⬇ Baixar</a>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="selo-4k">1080p+</div>
+                        <img src="static/images/imagem3.jpeg" alt="Imagem 1">
+                        <a href="static/images/imagem3.jpeg" download class="botao-download">⬇ Baixar</a>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="selo-4k">1080p+</div>
+                        <img src="static/images/imagem4.jpeg" alt="Imagem 1">
+                        <a href="static/images/imagem4.jpeg" download class="botao-download">⬇ Baixar</a>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="selo-4k">1080p+</div>
+                        <img src="static/images/imagem5.jpeg" alt="Imagem 1">
+                        <a href="static/images/imagem5.jpeg" download class="botao-download">⬇ Baixar</a>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="selo-4k">1080p+</div>
+                        <img src="static/images/imagem6.jpeg" alt="Imagem 1">
+                        <a href="static/images/imagem6.jpeg" download class="botao-download">⬇ Baixar</a>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="selo-4k">1080p+</div>
+                        <img src="static/images/imagem7.jpeg" alt="Imagem 1">
+                        <a href="static/images/imagem7.jpeg" download class="botao-download">⬇ Baixar</a>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="selo-4k">1080p+</div>
+                        <img src="static/images/imagem8.jpeg" alt="Imagem 1">
+                        <a href="static/images/imagem8.jpeg" download class="botao-download">⬇ Baixar</a>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="selo-4k">1080p+</div>
+                        <img src="static/images/imagem9.png" alt="Imagem 1">
+                        <a href="static/images/imagem9.pn" download class="botao-download">⬇ Baixar</a>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="selo-4k">1080p+</div>
+                        <img src="static/images/imagem10.jpeg" alt="Imagem 1">
+                        <a href="static/images/imagem10.jpeg" download class="botao-download">⬇ Baixar</a>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="selo-4k">1080p+</div>
+                        <img src="static/images/imagem11.jpeg" alt="Imagem 1">
+                        <a href="static/images/imagem11.jpeg" download class="botao-download">⬇ Baixar</a>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="selo-4k">1080p+</div>
+                        <img src="static/images/imagem12.png" alt="Imagem 1">
+                        <a href="static/images/imagem12.png" download class="botao-download">⬇ Baixar</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </main>
+    <footer class="site-footer">
+        <p class="frase-footer">"Mude a vida de alguém, mesmo que seja só um pouco." — Himmel</p>
+        <p class="creditos-footer">© 2025 - Frieren website | Desenvolvido com carinho por Pedro</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
