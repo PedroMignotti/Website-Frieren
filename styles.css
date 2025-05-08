@@ -878,3 +878,259 @@ h2 {
 }
 
 /*------------------------footer-----------------------*/
+
+
+
+/*-------------------responsividade---------------------*/
+/*--- 1400px ---*/
+@media (max-width: 1400px) {
+  .nav-list a {
+    font-size: 22px;
+    padding: 15px;
+  }
+
+  .dropdown span {
+    font-size: 22px;
+    padding: 15px;
+  }
+
+  #home {
+    margin-right: 250px;
+    font-size: 24px;
+  }
+
+  .texto h2 {
+    font-size: 25px;
+  }
+
+  .texto p {
+    font-size: 18px;
+  }
+}
+
+
+/*--- 768px ---*/
+@media (max-width: 768px) {
+  .nav-list a {
+    font-size: 16px;
+    padding: 7px;
+  }
+
+  .dropdown span {
+    font-size: 16px;
+    padding: 7px;
+  }
+
+  #home {
+    margin-right: 30px;
+    font-size: 18px;
+  }
+
+  .nav-list {
+    margin-right: 20px;
+  }
+
+  .capa h1 {
+    font-size: 56px;
+  }
+
+  .historia p {
+    padding-left: 10%;
+    padding-right: 16%;
+    font-size: 22px;
+  }
+
+  .capa {
+    background-size: cover;
+  }
+
+  .characters {
+    flex-direction: column;
+  }
+
+  .img-characters {
+    object-position: 70% center;
+    margin-left: 0px;
+    height: 500px;
+    width: 500px;
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(-500px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .text-characters {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 10px;
+  }
+
+  .texto h2 {
+    font-size: 20px;
+  }
+
+  .texto p {
+    font-size: 15px;
+  }
+
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+
+.hamburguer {
+  display: none;
+  font-size: 3rem;
+  background: none;
+  border: none;
+  color: #6d5a9c;
+  padding: 30px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media (max-width: 480px) {
+  .nav {
+    height: 100px;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background-color: #0a1a2f;
+    width: 100%;
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-list.open {
+    display: flex;
+  }
+
+  .nav-list a,
+  .dropdown span {
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
+  }
+
+  #home {
+    margin: 0;
+    font-size: 24px;
+    padding-left: 15px;
+  }
+
+  /* Ícone hamburguer */
+  .hamburguer {
+    display: block;
+    font-size: 32px;
+    color: #6d5a9c;
+    cursor: pointer;
+    padding: 20px;
+  }
+
+  /* DROPDOWN MOBILE */
+  .dropdown-menu {
+    width: 100%;
+    position: static;
+    background-color: #120b22;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .dropdown-menu li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .dropdown-menu .titulo-musica {
+    font-size: 14px;
+  }
+
+  .dropdown-menu button {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  .dropdown-menu a {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .creditos-menu {
+    text-align: left;
+  }
+
+  .foto-autor img {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+  }
+
+  .grid-galeria {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .frase-footer {
+    font-size: 0.8rem;
+  }
+
+  .creditos-footer {
+    font-size: 0.6rem;
+  }
+
+  .card {
+    flex: 0 0 80vw;
+  }
+
+  .links-externos a {
+    font-size: 15px;
+  }
+
+  .links-externos p {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .text-characters {
+    padding-left: 13%;
+    padding-right: 13%;
+    font-size: 18px;
+  }
+
+  .img-characters {
+    object-position: 70% center;
+    margin-left: 0px;
+    height: 380px;
+    width: 380px;
+  }
+
+  .historia p {
+    padding-left: 6%;
+    padding-right: 8%;
+    font-size: 18px;
+  }
+}

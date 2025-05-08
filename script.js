@@ -127,3 +127,27 @@ function tocarMusica(caminho) {
   audio.volume = 0.05; // volume de 30%
   audio.play();
 }
+
+
+
+
+
+
+const btn = document.querySelector('.hamburguer');
+const navList = document.querySelector('.nav-list');
+
+btn.addEventListener('click', () => {
+  navList.classList.toggle('open');
+});
+
+
+
+
+document.querySelectorAll('.dropdown').forEach(drop => {
+  drop.addEventListener('click', () => {
+    if (window.innerWidth <= 480) {
+      const menu = drop.querySelector('.dropdown-menu');
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+  });
+});
