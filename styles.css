@@ -1112,7 +1112,8 @@ h2 {
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 30px;
+    padding-top: 100px;
   }
 
   .text-characters {
@@ -1132,5 +1133,13 @@ h2 {
     padding-left: 6%;
     padding-right: 8%;
     font-size: 18px;
+  }
+
+  .modal-content {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 16 / 9;
+    padding: 1rem;
   }
 }
